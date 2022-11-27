@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="#" />  
+    <title>DENTONS</title>
+      
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- CSS personalizado --> 
+    <link rel="stylesheet" href="main.css">  
+      
+    <!--datables CSS básico-->
+    <link rel="stylesheet" type="text/css" href="datatables/datatables.min.css"/>
+    <!--datables estilo bootstrap 4 CSS-->  
+    <link rel="stylesheet"  type="text/css" href="datatables/DataTables-1.13.1/css/dataTables.bootstrap5.1.3.min.css">
+           
+    <!--font awesome con CDN-->  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+      
+  </head>
+    
+  <body> 
+     <header>
+         <h2 class="text-center text-light">Buscar por Procesos/Expediente/Abogado</h2>
+     </header>    
+    <div style="height:50px"></div>
+     
+    <!--Ejemplo tabla con DataTables-->
+    <div class="container">
+        <div class="row">
+                <div class="col-lg-12">
+                    <div class="table-responsive">        
+                        <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>Proceso</th>
+                                <th>Estado</th>
+                                <th>Abogado adjunto</th>                               
+                                <th>Inicio de trámite</th>
+                                <th>Costo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Migratorio</td>
+                                <td>En trámite</td>
+                                <td>Julian Aranda</td>                                
+                                <td>2022/11/25</td>
+                                <td>$660.00</td>
+                            </tr>
+                            <tr>
+                                <td>Abreviado</td>
+                                <td>En trámite</td>
+                                <td>Cesar Juarez</td>                                
+                                <td>2022/11/26</td>
+                                <td>$720.70</td>
+                            </tr>                
+                            <tr>
+                                <td>Tributario</td>
+                                <td>En trámite</td>
+                                <td>Sandra Casas</td>                                
+                                <td>2022/11/21</td>
+                                <td>$833.60</td>
+                            </tr> 
+                            <tr>
+                                <td>Alimentos</td>
+                                <td>En trámite</td>
+                                <td>Liliana Chavez</td>                                
+                                <td>2022/11/22</td>
+                                <td>$900,50</td>
+                            </tr>                           
+                        </tbody>        
+                       </table>                  
+                    </div>
+                </div>
+        </div>  
+    </div>    
+     
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="popper/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+      
+    <!-- datatables JS -->
+    <script type="text/javascript" src="datatables/datatables.min.js"></script>    
+     
+    <!-- para usar botones en datatables JS -->  
+    <script src="datatables/Buttons-2.3.3/js/dataTables.buttons.min.js"></script>  
+    <script src="datatables/JSZip-2.5.0/jszip.min.js"></script>    
+    <script src="datatables/pdfmake-0.1.36/pdfmake.min.js"></script>    
+    <script src="datatables/pdfmake-0.1.36/vfs_fonts.js"></script>
+    <script src="datatables/Buttons-1.5.6/js/buttons.html5.min.js"></script>
+     
+    <!-- código JS propìo-->    
+    <script type="text/javascript" src="main.js"></script>  
+    
+    
+  </body>
+</html>

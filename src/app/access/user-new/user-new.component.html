@@ -1,0 +1,21 @@
+<div class="login-dark" style="background-image: url(&quot;assets/img/backgrounds/carousel-2.jpg&quot;);">
+    <form [formGroup]="usernewForm" method="post" style="background-color: rgba(213, 184, 88, 0.9);">
+        <h2 class="text-center" style="color: #10b4ef;font-size: 26px; margin-bottom:20px;">Reservar cita<br></h2>
+        <h2 class="text-center" style="color: #10b4ef;font-size: 18px; margin-bottom:20px;">Datos personales<br></h2>
+        <div class="form-group"><input class="form-control" type="text" formControlName="loginUsuario" placeholder="Correo" autocomplete="off" style="color: rgb(0,0,0);"></div>
+        <div class="form-group"><input class="form-control" type="Password" formControlName="passwordUsuario" placeholder="Password" autocomplete="off" style="color: rgb(0,0,0);"></div>
+        <div class="form-group"><input class="form-control" type="text" formControlName="documentoIdentidad" placeholder="DNI" autocomplete="off" style="color: rgb(0,0,0);"></div>
+        <div class="form-group"><input class="form-control" type="text" formControlName="nombres" placeholder="Nombres" autocomplete="off" style="color: rgb(0,0,0);"></div>
+        <div class="form-group"><input class="form-control" type="text" formControlName="apellidoPaterno" placeholder="Apellido Paterno" autocomplete="off" style="color: rgb(0,0,0);"></div>
+        <div class="form-group"><input class="form-control" type="text" formControlName="apellidoMaterno" placeholder="Apellido Materno" autocomplete="off" style="color: rgb(0,0,0);"></div>
+        <div class="form-group"><input class="form-control" type="date" formControlName="fecha" placeholder="Fecha" autocomplete="off" style="color: rgb(0,0,0);"></div>
+       <div class="form-group"><select class="form-control form-control-sm" formControlName="idPerfil" style="color: rgb(0,0,0);"><option value="12" selected="">Tipo de Usuario</option><option value=13>Persona natural</option><option value="14">Persona Jurídica</option></select></div>
+        
+        <div class="form-group text-center"><button (click)="onSubmit()" class="btn btn-primary" type="submit" style="background-color: #28d0df;font-weight: normal;">Reservar</button></div>
+    </form>
+  
+</div>
+
+
+
+

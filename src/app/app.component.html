@@ -1,0 +1,51 @@
+<nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="mainNav" style="opacity: 1;background-color: rgba(52,58,64,0.75);">
+    <div class="container"><a class="navbar-brand js-scroll-trigger" routerLink="home" style="color: rgb(26, 147, 212);">DENTONS</a><button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarResponsive" type="button" data-toogle="collapse"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgb(210, 255, 85);"><i class="fa fa-bars" style="color: rgba(255,255,255,0.75);"></i></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="nav navbar-nav ml-auto text-uppercase">
+                <!--
+                <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger" href="#portfolio" style="color: rgb(255,165,85);">PROYECTOS</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger" href="#services" style="color: rgb(255,165,85);">DEPARTAMENTOs</a></li>-->
+
+             
+                
+             
+                <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger" routerLink="home" style="color: rgb(12, 159, 238);">Inicio</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger" routerLink="home" style="color: rgb(12, 159, 238);">Abogados</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger" routerLink="user-new" style="color: rgb(12, 159, 238);">Reservas</a></li>
+
+                <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger" routerLink="admin/project/index" style="color: rgb(12, 159, 238);">Mis procesos</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger" routerLink="admin/project/index" style="color: rgb(12, 159, 238);">Tarifas</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger" routerLink="home" style="color: rgb(12, 159, 238);">Especialidad</a></li>
+
+                <li *ngIf="token != null" class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Admin Project
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" routerLink="admin/project/new">Registrar</a>
+                        <a class="dropdown-item" routerLink="admin/project/index">Listar</a>
+                    </div>
+                </li>
+                <li *ngIf="token != null" class="nav-item" role="presentation"><a class="nav-link active js-scroll-trigger" style="color: #ffffff;">Bienvenido: {{ user }}</a></li>
+            </ul>
+            <a *ngIf="token == null" class="btn btn-primary text-black-50 border-dark" role="button" routerLink="login" style="font-family: Montserrat, sans-serif;font-weight: normal;background-color: rgb(26, 147, 212);border:none;">Login</a><li></li>
+           
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar procesos/expediente" aria-label="Search">
+                    <button class="btn btn-outline-success" routerLink="busqueda" type="submit">Buscar</button>
+                  </form>
+
+
+
+            
+            
+            <!--Cerrar Sesion-->
+            <a *ngIf="token != null" class="btn btn-primary text-black-50 border-dark" role="button" routerLink="logout" style="font-family: Montserrat, sans-serif;font-weight: normal;background-color: rgb(255,165,85);border:none;">Cerrar Sesion</a>
+        </div>
+    </div>
+</nav>
+<section style="min-height: 650px; padding-top: 0px; padding-bottom: 0px;">
+
+    <router-outlet></router-outlet>
+</section>

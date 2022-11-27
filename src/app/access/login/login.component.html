@@ -1,0 +1,12 @@
+<div class="login-dark" style="background-image: url(&quot;assets/img/backgrounds/admin-bg.jpg&quot;);">
+    <form [formGroup]="loginForm" method="post" style="background-color: rgba(30,40,51,0.75);">
+        <h2 class="sr-only">Login Form</h2>
+        <div class="illustration"><i class="icon ion-ios-locked-outline" style="color: rgba(58, 63, 229, 0.75);"></i></div>
+        <div class="form-group"><input class="form-control" type="email" formControlName="loginUsuario" placeholder="Login" autocomplete="off"></div>
+        <div class="form-group"><input class="form-control" type="password" formControlName="passwordUsuario" placeholder="Password" autocomplete="off"></div>
+        <div class="form-group"><button (click)="onSubmit()" class="btn btn-primary btn-block" type="submit" style="background-color: rgba(30, 59, 204, 0.75);font-weight: normal;">Ingresar</button></div>
+        <div class="form-group">
+            <a routerLink="/user-new">Registrarse</a>
+        </div>
+    </form>
+</div>
